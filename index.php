@@ -40,12 +40,25 @@ function actual($zona){
 		?>
 		</br>
 		<table>
-			<tr>
-				<td>zona</td><td>actualmente</td><td>en espera</td>
-			</tr>
-			<tr>
-				<td>recepcion</td><td></td><td><?php espera(1);?></td>
-			</tr>
+			<thead>
+                <tr>
+                  <th scope="col">Zona</th>
+                  <th scope="col">En espera</th>
+				</tr>
+            </thead>
+			<thead>
+                <tr>
+                  <th scope="col">Recepeción</th>
+                  <th scope="col"><?php espera(1);?></th>
+				</tr>
+            </thead>
+			<thead>
+                <tr>
+                  <th scope="col">Toma de signos</th>
+                  <th scope="col"><?php actual(2);?></td><td><?php espera(2);?></th>
+				</tr>
+            </thead>
+			
 			<tr>
 				<td>toma de signos</td><td><?php actual(2);?></td><td><?php espera(2);?></td>
 			</tr>
